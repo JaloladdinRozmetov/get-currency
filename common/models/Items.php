@@ -1,5 +1,7 @@
 <?php
 
+namespace common\models;
+
 use yii\db\ActiveRecord;
 
 class Items extends ActiveRecord

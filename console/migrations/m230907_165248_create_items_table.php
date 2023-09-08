@@ -19,6 +19,7 @@ class m230907_165248_create_items_table extends Migration
             'price' => $this->decimal(10, 2)->notNull(),
             'currency' => $this->string(3)->notNull(),
         ]);
+        $this->createIndex('idx-items-category', 'items', 'category');
     }
 
     /**
