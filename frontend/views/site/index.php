@@ -2,6 +2,8 @@
 
 /** @var yii\web\View $this */
 
+use yii\bootstrap5\Html;
+
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
@@ -12,7 +14,6 @@ $this->title = 'My Yii Application';
             <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
         </div>
     </div>
-
     <div class="body-content">
 
         <div class="row">
