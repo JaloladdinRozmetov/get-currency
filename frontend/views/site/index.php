@@ -1,9 +1,3 @@
-<?php
-
-use yii\helpers\Html;
-
-?>
-
 <main role="main" class="flex-shrink-0">
     <div class="container">
         <div class="site-index">

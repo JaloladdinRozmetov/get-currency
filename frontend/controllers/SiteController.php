@@ -71,6 +71,9 @@ class SiteController extends Controller
     }
 
 
+    /**
+     * @return string
+     */
     public function actionIndex()
     {
 
@@ -84,6 +87,9 @@ class SiteController extends Controller
         ]);
     }
 
+    /**
+     * @return array
+     */
     public function getItemsBySqlQuery()
     {
         $startTime = microtime(true);
@@ -103,7 +109,6 @@ class SiteController extends Controller
             ->orderBy(['i.name' => SORT_ASC])
             ->limit(10);
 
-// Enable query caching
         $query->cache(3600);
 
         $results = $query->all();
@@ -118,6 +123,9 @@ class SiteController extends Controller
         return $formattedResults;
     }
 
+    /**
+     * @return array
+     */
     public function getItemsByQuery()
     {
         $startTime = microtime(true);
